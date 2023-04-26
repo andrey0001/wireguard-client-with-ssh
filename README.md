@@ -6,7 +6,13 @@ Use it to start container with simple ssh-server. Public key should be provided 
 
 #### Example RUN
 ```bash
-docker run -it -e GUSER=andrey0001 -e CONFIG_URL="https://example.com/alpine-test-wireguard-config.conf" --cap-add NET_ADMIN --name wg-ssh --hostname wg-ssh -d andrey0001/wireguard-client-with-ssh
+docker run -it \
+ -e GUSER=andrey0001 \
+ -e CONFIG_URL="https://example.com/alpine-test-wireguard-config.conf" \
+ --cap-add NET_ADMIN \
+ --name wg-ssh \
+ --hostname wg-ssh \
+ -d andrey0001/wireguard-client-with-ssh
 ```
 
 #### Environment variables
@@ -14,3 +20,4 @@ docker run -it -e GUSER=andrey0001 -e CONFIG_URL="https://example.com/alpine-tes
 GUSER - guthub username to get public ssh-key 
 CONFIG_URL - url of wireguard client config 
 ```
+

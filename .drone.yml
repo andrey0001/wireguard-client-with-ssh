@@ -21,7 +21,7 @@ steps:
       repo: andrey0001/wireguard-client-with-ssh
       tags:
         - latest
-        - $DRONE_BUILD_NUMBER
+        - ${DRONE_BUILD_NUMBER}
       platforms:
         - linux/amd64
         - linux/arm64

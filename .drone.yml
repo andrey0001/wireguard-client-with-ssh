@@ -1,0 +1,34 @@
+---
+kind: pipeline
+type: docker
+name: create-docker-images
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: build
+    image: thegeeklab/drone-docker-buildx:23
+    privileged: true
+    settings:
+      dockerfile: Dockerfile
+      dry_run: true
+      username: 
+        from_secret: reg_user
+      password: 
+        from_secret: reg_password
+      repo: wireguard-client-with-ssh
+      tags:
+        - latest
+      platforms:
+        - linux/amd64
+        - linux/arm64
+        - linux/arm/v7
+    when:
+      branch:
+      - master
+
+node:
+  instance: mini
+  type: docker

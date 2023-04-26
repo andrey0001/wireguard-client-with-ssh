@@ -15,10 +15,10 @@ steps:
       dockerfile: Dockerfile
       dry_run: true
       username: 
-        from_secret: reg_user
+        from_secret: docker_username
       password: 
-        from_secret: reg_password
-      repo: wireguard-client-with-ssh
+        from_secret: docker_password
+      repo: andrey0001/wireguard-client-with-ssh
       tags:
         - latest
       platforms:

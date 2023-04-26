@@ -13,7 +13,7 @@ steps:
     privileged: true
     settings:
       dockerfile: Dockerfile
-      dry_run: true
+#      dry_run: true
       username: 
         from_secret: docker_username
       password: 

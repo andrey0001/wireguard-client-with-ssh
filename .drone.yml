@@ -20,8 +20,8 @@ steps:
         from_secret: docker_password
       repo: andrey0001/wireguard-client-with-ssh
       tags:
-        - latest
         - ${DRONE_BUILD_NUMBER}
+        - latest
       platforms:
         - linux/amd64
         - linux/arm64

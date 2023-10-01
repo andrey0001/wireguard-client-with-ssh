@@ -29,6 +29,8 @@ steps:
     when:
       branch:
       - master
+      event:
+      - promote
 
 node:
   instance: mini

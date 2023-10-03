@@ -12,7 +12,7 @@ docker run -it \
    --privileged  \
    --name wg-ssh \
    --hostname wg-ssh \
-   -d reg.andrey.org/wireguard-client-with-ssh
+   -d andrey0001/wireguard-client-with-ssh
 ```
 
 #### Environment variables

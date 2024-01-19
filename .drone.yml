@@ -18,7 +18,7 @@ steps:
         from_secret: vbdocker_username
       password: 
         from_secret: vbdocker_password
-      repo: viberadmin/wireguard-client-with-ssh
+      repo: ${username}/wireguard-client-with-ssh
       tags:
         - ${DRONE_BUILD_NUMBER}
         - latest

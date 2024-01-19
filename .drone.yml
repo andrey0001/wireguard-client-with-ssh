@@ -33,6 +33,6 @@ steps:
       - promote
 
 node:
-  instance: mini7
+  instance: x114
   type: docker
   

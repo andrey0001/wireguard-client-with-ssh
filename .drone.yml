@@ -9,7 +9,7 @@ platform:
 
 steps:
   - name: build
-    image: thegeeklab/drone-docker-buildx:23
+    image: thegeeklab/drone-docker-buildx:24
     privileged: true
     settings:
       dockerfile: Dockerfile
@@ -33,6 +33,6 @@ steps:
       - promote
 
 node:
-  instance: mini
+  instance: mini7
   type: docker
   

@@ -15,9 +15,9 @@ steps:
       dockerfile: Dockerfile
 #      dry_run: true
       username: 
-        from_secret: docker_username
+        from_secret: vbdocker_username
       password: 
-        from_secret: docker_password
+        from_secret: vbdocker_password
       repo: andrey0001/wireguard-client-with-ssh
       tags:
         - ${DRONE_BUILD_NUMBER}

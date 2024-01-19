@@ -15,10 +15,10 @@ steps:
       dockerfile: Dockerfile
 #      dry_run: true
       username: 
-        from_secret: vbdocker_username
+        from_secret: docker_username
       password: 
-        from_secret: vbdocker_password
-      repo: viberadmin/wireguard-client-with-ssh
+        from_secret: docker_password
+      repo: andrey0001/wireguard-client-with-ssh
       tags:
         - ${DRONE_BUILD_NUMBER}
         - latest
@@ -33,7 +33,7 @@ steps:
       - promote
 
 node:
-  instance: x114
+  instance: mini7
   type: docker
   
   
